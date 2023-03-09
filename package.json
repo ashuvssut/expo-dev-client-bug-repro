@@ -1,23 +1,20 @@
 {
-  "name": "walkingpal",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "expo start --dev-client",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "web": "expo start --web"
-  },
-  "dependencies": {
-    "expo": "~48.0.6",
-    "expo-dev-client": "~2.1.5",
-    "expo-splash-screen": "~0.18.1",
-    "expo-status-bar": "~1.4.4",
-    "react": "18.2.0",
-    "react-native": "0.71.3"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.20.0"
-  },
-  "private": true
+ "name": "walkingpal",
+ "version": "0.1.0",
+ "description": "WalkingPal Monorepo",
+ "main": "index.js",
+ "repository": "https://github.com/WalkingPal/walkingpal-rn",
+ "author": "ashuvssut (Ashutosh Khanduala)",
+ "license": "MIT",
+ "private": true,
+ "scripts": {
+  "client": "yarn workspace client dev",
+  "api": "yarn workspace api dev"
+ },
+ "workspaces": [
+  "apps/client"
+ ],
+ "dependencies": {
+  "typescript": "^4.9.5"
+ }
 }
