@@ -1,9 +1,21 @@
 {
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "jsx": "react-native",
-    // "types": ["nativewind/types"]
-  },
-  "include": ["app", "expo-plugins", "src", "app.config.ts", "index.ts"],
-  "exclude": ["node_modules"]
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"jsx": "react-native"
+		// "types": ["nativewind/types"]
+	},
+	"include": ["app", "expo-plugins", "src", "app.config.ts", "index.ts"],
+	"exclude": ["node_modules"],
+
+	"baseUrl": "./src",
+	"paths": {
+		"$context/*": ["context/*"],
+		"$hooks/*": ["theme/*", "hooks/*"],
+		"$types/*": ["types/*"],
+		"$types/redux": ["store/types"],
+		"$svg": ["assets/svg/index"],
+		"$utils/*": ["utils/*"],
+		"$mock/*": ["mock/*"],
+		"$constants": ["constants"]
+	}
 }

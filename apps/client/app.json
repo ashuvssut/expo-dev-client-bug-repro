@@ -1,15 +1,13 @@
 {
-  "expo": {
-    "name": "walkingpal",
-    "slug": "walkingpal",
-    "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "af5871c0-79e1-43cd-99a7-a9e57322b285"
-      }
-    }
-  }
+	"expo": {
+		"slug": "walkingpal",
+		"name": "WalkingPal",
+		"version": "0.1.0",
+		"assetBundlePatterns": ["**/*"],
+		"extra": {
+			"eas": {
+				"projectId": "af5871c0-79e1-43cd-99a7-a9e57322b285"
+			}
+		}
+	}
 }
