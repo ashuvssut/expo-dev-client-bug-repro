@@ -27,19 +27,22 @@ import "expo-dev-client";
 // 	});
 // }
 
-export const AppWrapper = () => {
+export default function AppWrapper() {
 	return (
 		// <HeadingSensorContextProvider>
 		// <QueryClientProvider client={queryClient}>
 		// 	<Provider store={store}>
 		// 		<PersistGate loading={null} persistor={persistor}>
-		<App />
+		<>
+			
+			<App />
+		</>
 		// 		</PersistGate>
 		// 	</Provider>
 		// </QueryClientProvider>
 		// </HeadingSensorContextProvider>
 	);
-};
+}
 
 const App = () => {
 	// const theme = useCurrentTheme();
@@ -63,8 +66,6 @@ const App = () => {
 		// </PaperProvider>
 	);
 };
-
-export default App;
 
 const styles = StyleSheet.create({
 	container: {

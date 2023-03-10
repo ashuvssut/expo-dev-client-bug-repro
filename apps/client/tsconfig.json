@@ -1,11 +1,12 @@
 {
 	"extends": "../../tsconfig.base.json",
 	"compilerOptions": {
-		"jsx": "react-native"
-		// "types": ["nativewind/types"]
+		"jsx": "react-native",
+		"allowSyntheticDefaultImports": true
 	},
-	"include": ["app", "expo-plugins", "src", "app.config.ts", "index.ts"],
-	"exclude": ["node_modules"],
+
+	"include": ["src", "expo-plugins", "app.config.ts", "index.ts"],
+	"exclude": ["node_modules", ".dump"],
 
 	"baseUrl": "./src",
 	"paths": {

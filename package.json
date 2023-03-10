@@ -1,20 +1,20 @@
 {
- "name": "walkingpal",
- "version": "0.1.0",
- "description": "WalkingPal Monorepo",
- "main": "index.js",
- "repository": "https://github.com/WalkingPal/walkingpal-rn",
- "author": "ashuvssut (Ashutosh Khanduala)",
- "license": "MIT",
- "private": true,
- "scripts": {
-  "client": "yarn workspace client dev",
-  "api": "yarn workspace api dev"
- },
- "workspaces": [
-  "apps/client"
- ],
- "dependencies": {
-  "typescript": "^4.9.5"
- }
+	"name": "walkingpal",
+	"version": "0.1.0",
+	"description": "WalkingPal Monorepo",
+	"main": "index.js",
+	"repository": "https://github.com/WalkingPal/walkingpal-rn",
+	"author": "ashuvssut (Ashutosh Khanduala)",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"client:devbuild": "yarn workspace client android",
+		"client": "yarn workspace client dev",
+		"api": "yarn workspace api dev"
+	},
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"dependencies": {}
 }

@@ -2,6 +2,7 @@
 	"expo": {
 		"slug": "walkingpal",
 		"name": "WalkingPal",
+		"displayName": "WalkingPal",
 		"version": "0.1.0",
 		"assetBundlePatterns": ["**/*"],
 		"extra": {
