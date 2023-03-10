@@ -5,17 +5,12 @@
 		"strict": true, // remove this line after upgrading to TS v5
 		"jsx": "react-native",
 		"allowSyntheticDefaultImports": true,
-		"baseUrl": "src",
+		"baseUrl": ".",
 		"paths": {
-			"$context/*": ["context/*"],
-			// "$hooks/*": ["theme/*", "hooks/*"],
-			"$hooks/*": ["hooks/*"],
-			"$types/*": ["types/*"],
-			"$types/redux": ["store/types"],
-			"$svg": ["assets/svg/index"],
-			"$utils/*": ["utils/*"],
-			"$mock/*": ["mock/*"],
-			"$constants": ["constants"]
+			"src/*": ["src/*"],
+			"src/types/*": ["./src/types/*"],
+			"src/types/redux": ["./src/redux/types"],
+			"src/svg": ["./src/assets/svg/index"]
 		}
 	},
 

@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { Button } from "react-native-paper";
 import "expo-dev-client";
 import { Provider as PaperProvider } from "react-native-paper";
-import { theme } from "./src/theme/index";
+import { theme } from "src/theme";
 // import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 // import { theme } from "src/theme";
 // import Routes from "./navigation";
