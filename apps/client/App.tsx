@@ -1,10 +1,11 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import { Button } from "react-native-paper";
 import "expo-dev-client";
-
-// import { Provider as PaperProvider } from "react-native-paper";
+import { Provider as PaperProvider } from "react-native-paper";
+import { theme } from "./src/theme/index";
 // import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
-// import { useCurrentTheme } from "$hooks/theme";
+// import { theme } from "src/theme";
 // import Routes from "./navigation";
 // import { NavigationContainer } from "@react-navigation/native";
 // import { StatusBar } from "components/StatusBar";
@@ -34,7 +35,7 @@ export default function AppWrapper() {
 		// 	<Provider store={store}>
 		// 		<PersistGate loading={null} persistor={persistor}>
 		<>
-			
+			<Text>Open up App.js to start working on your app!</Text>
 			<App />
 		</>
 		// 		</PersistGate>
@@ -45,14 +46,17 @@ export default function AppWrapper() {
 }
 
 const App = () => {
-	// const theme = useCurrentTheme();
 	return (
-		// <PaperProvider theme={theme}>
-		//{/**
+		<PaperProvider theme={theme}>
+			<Button icon="camera" mode="contained">
+				dsaf
+			</Button>
+
+			{/**
 		//* All providers like Redux's store provider should always be
 		//* wrapped outside PaperProvider.
 		//*ref https://callstack.github.io/react-native-paper/getting-started.html
-		//*/}
+		//
 		// <SafeAreaProvider>
 		// 	<SafeAreaView style={{ flex: 1 }}>
 		// 		<StatusBar />
@@ -63,7 +67,8 @@ const App = () => {
 		// 		</NavigationContainer>
 		// 	</SafeAreaView>
 		// </SafeAreaProvider>
-		// </PaperProvider>
+		*/}
+		</PaperProvider>
 	);
 };
 

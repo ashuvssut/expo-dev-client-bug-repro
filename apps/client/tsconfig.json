@@ -1,22 +1,24 @@
 {
-	"extends": "../../tsconfig.base.json",
+	"extends": "expo/tsconfig.base",
+	// "extends": ["expo/tsconfig.base", "../../tsconfig.base.json"], // use this after upgrading to TS v5
 	"compilerOptions": {
+		"strict": true, // remove this line after upgrading to TS v5
 		"jsx": "react-native",
-		"allowSyntheticDefaultImports": true
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": "src",
+		"paths": {
+			"$context/*": ["context/*"],
+			// "$hooks/*": ["theme/*", "hooks/*"],
+			"$hooks/*": ["hooks/*"],
+			"$types/*": ["types/*"],
+			"$types/redux": ["store/types"],
+			"$svg": ["assets/svg/index"],
+			"$utils/*": ["utils/*"],
+			"$mock/*": ["mock/*"],
+			"$constants": ["constants"]
+		}
 	},
 
 	"include": ["src", "expo-plugins", "app.config.ts", "index.ts"],
-	"exclude": ["node_modules", ".dump"],
-
-	"baseUrl": "./src",
-	"paths": {
-		"$context/*": ["context/*"],
-		"$hooks/*": ["theme/*", "hooks/*"],
-		"$types/*": ["types/*"],
-		"$types/redux": ["store/types"],
-		"$svg": ["assets/svg/index"],
-		"$utils/*": ["utils/*"],
-		"$mock/*": ["mock/*"],
-		"$constants": ["constants"]
-	}
+	"exclude": ["node_modules", ".dump"]
 }
